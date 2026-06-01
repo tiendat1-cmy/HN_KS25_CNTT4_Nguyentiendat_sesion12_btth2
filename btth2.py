@@ -154,7 +154,7 @@ while True :
                         lai_suat = account["interest_rate"]
                         print("Khách hàng đủ điều kiện hưởng lãi đúng hạn")
                     interest = (account["balance"]* lai_suat / 100 * sending_month / 12)
-                    total_amountn = account["balance"] + i
+                    total_amountn = account["balance"] + interest
                     print("Tiền lãi thực nhận:", interest)
                     print("Tổng tiền thực nhận:", total_amountn)
                     break
